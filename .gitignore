@@ -1,0 +1,26 @@
+# Secrets
+.env
+*.env.local
+
+# Frontend
+portfolio-frontend/node_modules/
+portfolio-frontend/dist/
+portfolio-frontend/.env
+
+# Backend
+portfolio-backend/target/
+portfolio-backend/*.jar
+portfolio-backend/.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+portfolio-frontend/nginx.conf.bak
