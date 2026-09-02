@@ -4,12 +4,8 @@ import { profile } from '../../data/profile';
 import { User } from 'lucide-react';
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, delay: i * 0.1, ease: 'easeOut' },
-  }),
+  hidden:   { opacity: 0, y: 30 },
+  visible:  { opacity: 1, y: 0 },
 };
 
 export default function About() {
@@ -70,10 +66,10 @@ export default function About() {
               {profile.stats.map((stat, i) => (
                 <motion.div
                   key={stat.label}
-                  custom={i}
                   variants={itemVariants}
                   initial="hidden"
                   animate={inView ? 'visible' : 'hidden'}
+                  transition={{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }}
                   className="glass rounded-xl p-4 text-center card-hover"
                 >
                   <div className="text-2xl mb-1">{stat.icon}</div>
@@ -129,10 +125,10 @@ export default function About() {
               ].map((item, i) => (
                 <motion.div
                   key={item.title}
-                  custom={i}
                   variants={itemVariants}
                   initial="hidden"
                   animate={inView ? 'visible' : 'hidden'}
+                  transition={{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }}
                   className="glass rounded-xl p-4 card-hover"
                 >
                   <div className="text-xl mb-2">{item.icon}</div>
