@@ -21,7 +21,7 @@ and working with databases, REST APIs, authentication, Docker and modern develop
   profileImage: '/images/profile.jpeg',
 
   // TODO: place your resume PDF at /public/resume/Toujar_Kundenayak_Resume.pdf
-  resumeUrl: 'https://drive.google.com/file/d/12dJB4A7HtO-DwthlK-sh0BI045LIL827/view?usp=sharing',
+  resumeUrl: 'https://drive.google.com/file/d/1oWKzn13TkOFty4OyJYd-WxEmJiJj3pJX/view?usp=drive_link',
 
   // ── Social links ─────────────────────────────────────────
   // TODO: replace with your actual URLs
